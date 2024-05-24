@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header section with title and description -->
+    <header>
+        <div class="header-title">Student Registration System</div>
+        <p class="header-description"> Streamline your administrative tasks and ensure organized student management with just a few clicks.</p>
+    </header>
+    
+    <!-- Main section containing the registration form and the display table -->
+    <div id="section">
+        <!-- Registration form section -->
+        <section id="registration-form">
+            <form id="studentForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName">
+
+                <label for="studentID">Student Id:</label>
+                <input type="text" id="studentID" name="studentID">
+
+                <label for="emailID">Email ID:</label>
+                <input type="email" id="emailID" name="emailID">
+
+                <label for="contactNo">Contact No.:</label>
+                <input type="text" id="contactNo" name="contactNo">
+
+                <!-- Submit button for the form -->
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section to display the list of student records -->
+        <section id="display">
+            <h2>Student Records</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="records">
+                    <!-- Student records will be appended here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <!-- Linking the JavaScript file for functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>
